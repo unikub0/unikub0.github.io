@@ -12,21 +12,59 @@
     <!--Kublog framework-->
     <link rel="stylesheet" href="/style/kublog.css" type="text/css"/>
 
+    <style>
+        #main{
+            background-color: aqua;
+        }
+    </style>
+
     <!--Title-->
-    <title>UniKubLog - Selamat Datang</title>
+    <title>KubLog - Selamat Datang</title>
 </head>
 <body>
-    <nav class="hbar">
-        <a href="#menu" class="item">Menu</a>
-        <a href="#home" class="item">KubLog</a> <!--Logo-->
-        <input type="text" placeholder="Search Bar">
-        <a href="#theme" class="item">Light</a>
-    </nav>
-    <header class="sect">
-        <h1>KubLog</h1>
-        <p>Selamat Datang di KubLog, situs Blog yang membahas seputar informasi
-             <b>dunia teknologi</b>, <b>komputer</b>, dan <b>hal-hal random</b>.</p>
+    
+    <header class="card flex" id="main">
+        <div class="element">
+            <h1 class="title align-center">KubLog</h1>
+            <p>
+                Selamat Datang di KubLog, situs Blog yang membahas seputar informasi
+                <b>dunia teknologi</b>, <b>komputer</b>, dan <b>hal-hal random</b>.
+            </p>
+        </div>
         
     </header>
+    <nav class="hbar">
+        <div class="item">
+            <a href="#menu" class="item">Menu</a>
+            <a href="#home" class="item">KubLog</a> <!--Logo-->
+        </div>
+        <div class="item">
+            <input type="text" placeholder="Search Bar">
+        </div>
+        <div class="item">
+            <a href="#theme" class="item">Light</a>
+        </div>
+    </nav>
+    <div class="card flex">
+        <div class="hcard">
+            <h1 class="title">Konten</h1>
+            <p>Tutorial? Pembahasan? Berita? Beragam konten menarik dapat kamu nikmati di sini.</p>
+        </div>
+        <div class="hcard">
+            <h1 class="title">Proyek</h1>
+            <p>Beberapa proyek yang sedang ku kerjakan dan dokumentasinya.</p>
+        </div>
+        <div class="hcard">
+            <h1 class="title">Jasa</h1>
+            <p>Butuh apa? Mungkin aku bisa membantumu di beberapa bidang. Bisa lihat di sini.</p>
+        </div>
+    </div>
+    
+
+    
+    <footer class="card align-center">
+        <h1>Follow Me</h1>
+        YT IG GH SC DC TW
+    </div>
 </body>
 </html>
