@@ -1,59 +1,21 @@
-body{
-    margin: 0;
-}
-
-/* Utility */
-.flex{
-    display: flex;
-}
-
-.align-left{
-    text-align: left;
-}
-.align-center{
-    text-align: center;
-}
-.align-right{
-    text-align: right;
-}
-
-.hbar{
+.hud{
     position: fixed;
-    width: 90%;
-    height: 50px;
-    border-radius: 10px;
-    top: 10px;
-    left: 5%;
+}
+.hbox{
+    display: inline-flex;
+}
+.card{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: gray;
+    flex-direction: row;
 }
-.hbar .item{
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 15px;
-    text-align: center;
-    vertical-align: middle;
+@media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
 }
-#main h1{
-    font-size: 2.5rem;
-}
-#main{
-    height: 24rem;
-    justify-content: center;
-    align-items: center;
-}
-.card {
-    position: relative;
-    width: 100%;
-}
-.card .element{
-    position: absolute;
-}
+ul.card{
 
-.hcard{
-    display: inline-block;
-    text-align: center;
+}
+ul.card li{
+    
 }

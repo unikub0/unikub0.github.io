@@ -6,57 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Theme-->
+    <!--Styling-->
     <link rel="stylesheet" href="/style/theme.css" type="text/css"/>
 
     <!--Kublog framework-->
     <link rel="stylesheet" href="/style/kublog.css" type="text/css"/>
 
-    <style>
-        #main{
-            background-color: aqua;
-        }
-    </style>
-
     <!--Title-->
     <title>KubLog - Selamat Datang</title>
 </head>
 <body>
-    
-    <header class="card flex" id="main">
+    <header class="card flex" id="title">
         <div class="element">
             <h1 class="title align-center">KubLog</h1>
-            <p>
+            <section>
                 Selamat Datang di KubLog, situs Blog yang membahas seputar informasi
                 <b>dunia teknologi</b>, <b>komputer</b>, dan <b>hal-hal random</b>.
-            </p>
+            </section>
         </div>
         
     </header>
-    
-    <div class="card flex">
-        <div class="hcard">
-            <h1 class="title">Konten</h1>
-            <p>Tutorial? Pembahasan? Berita? Beragam konten menarik dapat kamu nikmati di sini.</p>
+    <main>
+        <div class="card">
+            <section>
+                <h1 class="title">Konten</h1>
+                <p>Tutorial? Pembahasan? Berita? Beragam konten menarik dapat kamu nikmati di sini.</p>
+            </section>
+            <section>
+                <h1 class="title">Proyek</h1>
+                <p>Beberapa proyek yang sedang ku kerjakan dan dokumentasinya.</p>
+            </section>
+            <section>
+                <h1 class="title">Jasa</h1>
+                <p>Butuh apa? Mungkin aku bisa membantumu di beberapa bidang. Bisa lihat di sini.</p>
+            </section>
         </div>
-        <div class="hcard">
-            <h1 class="title">Proyek</h1>
-            <p>Beberapa proyek yang sedang ku kerjakan dan dokumentasinya.</p>
-        </div>
-        <div class="hcard">
-            <h1 class="title">Jasa</h1>
-            <p>Butuh apa? Mungkin aku bisa membantumu di beberapa bidang. Bisa lihat di sini.</p>
-        </div>
-    </div>
-    
-    <footer class="card align-center">
+    </main>
+    <footer>
         <h1>Follow Me</h1>
         YT IG GH SC DC TW
-    </div>
-    <nav class="hbar">
-        <div class="item">
+    </footer>
+    <nav class="hud hbox" id="navbar">
+        <div class="item hbox">
             <a href="#menu" class="item">Menu</a>
-            <a href="#home" class="item">KubLog</a> <!--Logo-->
+            <a href="#home" class="item">KubLog</a>
         </div>
         <div class="item">
             <input type="text" placeholder="Search Bar">
