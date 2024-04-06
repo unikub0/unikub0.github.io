@@ -30,3 +30,7 @@ h1{
 .card > * {
     margin: 5px;
 }
+.item{
+    padding: 5px;
+    border-radius: 5px;
+}

@@ -4,11 +4,24 @@
 .hbox{
     display: inline-flex;
 }
+.vbox{
+    display: inline-flex;
+    flex-direction: column;
+}
 .card{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-@media (max-width: 600px) {
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box .item{
+    width: 80px;
+    height: 90px;
+}
+@media (max-width: 800px) {
     .card {
       flex-direction: column;
     }
@@ -18,4 +31,7 @@ ul.card{
 }
 ul.card li{
     
+}
+.vbox.wide, .hbox.wide{
+    display: flex;
 }
