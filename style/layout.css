@@ -1,0 +1,39 @@
+body {
+	margin: 0
+}
+.debug > * > *{
+	outline: solid 1px red;
+}
+#menubar > a > *{
+	font-family: 'JetBrains Mono';
+}
+#menubar {
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	top: 0;
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+}
+#menubar > a {
+	padding: 0 10px 0 0;
+}
+#menubar > a > img{
+	vertical-align: middle;
+}
+#bottom {
+	bottom: 0;
+}
+#content {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 800px;
+	min-height: 100%;
+	padding: 15px;
+}
+.flexspace {
+	flex: 1;
+}

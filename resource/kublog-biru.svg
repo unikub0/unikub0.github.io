@@ -1,0 +1,7 @@
+<svg width="1024" height="1024" version="1.1" viewBox="0 0 270.93 270.93" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <path d="m135.47 135.47-95.321-55.033 95.321-55.033 95.321 55.033z" fill="#0a0011" stroke-dashoffset="200" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0583" style="paint-order:fill markers stroke"/>
+  <path d="m40.146 80.433 190.64 110.07-95.321 55.033-95.321-55.033z" fill="#04ffbc" style="paint-order:fill markers stroke"/>
+  <path d="m40.146 190.5 190.64-110.07v110.07l-95.321 55.033z" fill="#4ad7da" style="paint-order:fill markers stroke"/>
+ </g>
+</svg>

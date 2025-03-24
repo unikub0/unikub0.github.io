@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="/style/theme.css" type="text/css" />
+
+    <!--Kublog framework-->
+    <link rel="stylesheet" href="/style/kublog.css" type="text/css" />
+
+    <style>
+        .con {
+            display: grid;
+            grid-template-columns: 500px auto;
+        }
+
+        @media (max-width: 800px) {
+            .con {
+                grid-template-columns: 500px;
+            }
+        }
+
+        #container2048 {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            border: 2.5px solid cyan;
+            border-radius: 20px;
+            padding: 4px;
+            width: 440px;
+            height: 440px;
+        }
+
+        #container2048>.box {
+            background-color: cadetblue;
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #controls {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        #controls>button {
+            border: 3px solid green;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        #controls>* {
+            display: block;
+            position: absolute;
+        }
+
+        #controls>#up {
+            top: 20%;
+        }
+
+        #controls>#down {
+            bottom: 20%;
+        }
+
+        #controls> :is(#up, #down) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #controls>#left {
+            left: 20%;
+        }
+
+        #controls>#right {
+            right: 20%;
+        }
+
+        #controls>:is(#left, #right) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="con">
+        <div id="container2048">
+        </div>
+        <div id="controls">
+            <button type="button" onclick="tes()">refresh</button>
+            <button id="up"><i class="nf nf-md-chevron_double_up"></i></button>
+            <button id="down"><i class="nf nf-md-chevron_double_down"></i></button>
+            <button id="left"><i class="nf nf-md-chevron_double_left"></i></button>
+            <button id="right"><i class="nf nf-md-chevron_double_right"></i></button>
+        </div>
+        <div id="score"></div>
+    </div>
+</body>
+
+</html>
