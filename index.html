@@ -1,29 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+    <head>
+        <!--Device init-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <!--Device init-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Libraries-->
+        <!--typescript transpiler-->
+        <script src="https://unpkg.com/typescript/lib/typescript.js"></script>
 
-    <!--Styling-->
-    <link rel="stylesheet" href="/style/theme.css" type="text/css" />
+        <!--Styling-->
+        <link rel="stylesheet" href="/style/layout.css" type="text/css" />
+        <link rel="stylesheet" href="/style/theme.css" type="text/css" />
+        <link rel="stylesheet" href="/style/fonts.css" type="text/css" />
 
-    <!--Kublog framework-->
-    <link rel="stylesheet" href="/style/kublog.css" type="text/css" />
+        <!--Title-->
+        <title>KubLog - Selamat Datang</title>
+    </head>
 
-    <!--Title-->
-    <title>KubLog - Selamat Datang</title>
-</head>
-
-<body>
-    <div id="nav">
-      KubLog navbar
-    </div>
-    <div id="content">
-      Kublog content
-    </div>
-</body>
-
+    <body class="dark-neonic">
+        <header id="menubar">
+            <nav>
+                <a class="title" href="/">
+                    <img
+                        src="/resource/kublog-biru.svg"
+                        alt="logo kublog"
+                        width="50px"
+                    />Kublog
+                </a>
+            </nav>
+        </header>
+        <main id="content">
+            <header class="card" id="greet">
+                <figure>
+                    <img src="/resource/liko.jpg" />
+                    <figcaption>ini cewe atmin btw</figcaption>
+                </figure>
+                <div>
+                    <h1>
+                        Selamat datang di <strong>Kublog</strong>, blog
+                        pribadinya UniKub
+                    </h1>
+                    <span
+                        >Ayo mulai menjelajahi ilmu pengetahuan bersama
+                        atmin!</span
+                    >
+                </div>
+            </header>
+            <section>
+                <h2 id="belajar">Belajar</h2>
+                <nav class="card">
+                    <div>soon...</div>
+                </nav>
+            </section>
+            <section>
+                <h2>Artikel</h2>
+                <nav class="card">
+                    <div>soon...</div>
+                </nav>
+            </section>
+            <section>
+                <h2>Tentang</h2>
+                <p>
+                    UniKub adalah identitas lain diriku, yaitu seorang pemuda
+                    yang haus pengetahuan namun tidak berbakat. Aku sangat
+                    menyukai sains, terutama matematika dan fisika, sejak kecil.
+                    Aku memiliki pandangan bahwa semua orang berhak mendapatkan
+                    akses ke pada ilmu pengetahuan. Aku juga suka mendalami ilmu
+                    komputer dan musik elektronik.
+                </p>
+                <p>
+                    Sekarang, aku sedang berfokus di dunia perkuliahan sambil
+                    membuat konten belajar di channel YouTube-nya dan membuat
+                    artikel di blog ini.
+                </p>
+            </section>
+            <section>
+                <h2>Kontak Sosial</h2>
+                <nav class="card">
+                    <a href="https://instagram.com/@unikub0"
+                        ><i class="nf nf-md-instagram"></i> @unikub0</a
+                    >
+                    <a href="https://youtube.com/@unikubCH"
+                        ><i class="nf nf-md-youtube"></i> UniKub</a
+                    >
+                    <a href="https://github.com/unikub0"
+                        ><i class="nf nf-md-github"></i> unikub0</a
+                    >
+                </nav>
+            </section>
+        </main>
+    </body>
 </html>
